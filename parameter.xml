@@ -3,6 +3,7 @@
 <suite name="Suite">
 	<parameter name="username" value="admin"></parameter>
 	<parameter name="password" value="admin"></parameter>
+	
 	<parameter name="userids" value="ttttt"></parameter>
 	<parameter name="pass" value="1234"></parameter>
 	<test thread-count="5" name="Test">
@@ -13,7 +14,10 @@
 					<include
 						name="verifyUserCanAbleToLoginCorrectUsernameAndPassword"></include>
 				</methods>
+
+
 			</class>
+			
 
 			<class name="testscript.AdminUserTest">
 				<methods>

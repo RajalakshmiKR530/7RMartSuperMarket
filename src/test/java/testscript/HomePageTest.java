@@ -18,7 +18,7 @@ public class HomePageTest extends Base {
 	  
 	  HomePage homepage  = new HomePage(driver);
 	  homepage.clickLogout();
-	  System.out.println("user Successfully Logout");
+	  
 	  
   }
 }

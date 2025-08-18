@@ -23,6 +23,8 @@ public LoginPage(WebDriver driver)
            @FindBy(xpath="//input[@placeholder='Username']")WebElement userName;
            @FindBy(xpath="//input[@placeholder='Password']")WebElement passWord;
            @FindBy(xpath="//button[text()='Sign In']")WebElement signIn;
+           @FindBy(xpath="//p[text()='Dashboard']")WebElement dashboard;
+           @FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alertLogin;
            
 public void enterUserNameAndPassword(String username,String password)
 {
@@ -34,6 +36,16 @@ public void clickSignIn()
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.elementToBeClickable(signIn));
 	signIn.click();
+	
+}
+public boolean isDashboardIsDisplay()
+{
+	return dashboard.isDisplayed();
+	
+}
+public boolean isAlertIsDisplay()
+{
+	return alertLogin.isDisplayed();
 	
 }
 }

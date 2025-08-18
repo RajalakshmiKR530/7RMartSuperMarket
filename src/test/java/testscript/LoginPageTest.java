@@ -1,5 +1,6 @@
 package testscript;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -15,7 +16,9 @@ public class LoginPageTest extends Base {
 	  LoginPage loginpage = new LoginPage(driver);
 	  loginpage.enterUserNameAndPassword(username,password);
 	  loginpage.clickSignIn();
-	  System.out.println("Access Granted");
+	  boolean ishomepageisloaded = loginpage.isDashboardIsDisplay();
+	  Assert.assertTrue(ishomepageisloaded, "Homepage is not loaded");
+	 
 	
   }
   @Test(dataProvider = "accessDetails")
@@ -25,7 +28,8 @@ public class LoginPageTest extends Base {
 	  LoginPage loginpage = new LoginPage(driver);
 	  loginpage.enterUserNameAndPassword(username,password);
 	  loginpage.clickSignIn();
-	  System.out.println("Access Denied");
+	  boolean isalertisloaded = loginpage.isAlertIsDisplay();
+	  Assert.assertTrue(isalertisloaded, "Alert is not displayed");
   }	
   @Test
   public void verifyUserCanAbleToLoginInCorrectUsernameAndCorrectPassword() 
@@ -34,7 +38,11 @@ public class LoginPageTest extends Base {
 	  LoginPage loginpage = new LoginPage(driver);
 	  loginpage.enterUserNameAndPassword("admins", "admin");
 	  loginpage.clickSignIn();
-	  System.out.println("Access Denied");
+	  boolean isalert = loginpage.isAlertIsDisplay();
+	  Assert.assertTrue(isalert, "Alert is not displayed");
+	  
+	  
+	  
   }
   @Test
   public void verifyUserCanAbleToLoginCorrectUsernameAndInCorrectPassword() 
@@ -43,7 +51,9 @@ public class LoginPageTest extends Base {
 	  LoginPage loginpage = new LoginPage(driver);
 	  loginpage.enterUserNameAndPassword("admin", "1234");
 	  loginpage.clickSignIn();
-	  System.out.println("Access Denied");
+	  boolean alertloaded = loginpage.isAlertIsDisplay();
+	  Assert.assertTrue(alertloaded, "Alert is not displayed");
+	  
   } 
   
   @DataProvider(name="accessDetails")

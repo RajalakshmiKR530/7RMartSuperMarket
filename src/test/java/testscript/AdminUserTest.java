@@ -24,7 +24,7 @@ public class AdminUserTest extends Base {
 	  adminuser.enterUsernamePassword(userids, pass);
 	  adminuser.selectUserTypes();
 	  adminuser.saveData();
-	  System.out.println("User Entered Successfully");
+	  
 	  
 	  
 }
