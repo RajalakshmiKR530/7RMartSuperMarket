@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-18T12:45:26 IST" name="Suite" finished-at="2025-08-18T12:45:37 IST" duration-ms="11645">
+  <suite started-at="2025-08-18T20:58:57 IST" name="Suite" finished-at="2025-08-18T20:59:08 IST" duration-ms="10235">
     <groups>
     </groups>
-    <test started-at="2025-08-18T12:45:26 IST" name="Test" finished-at="2025-08-18T12:45:37 IST" duration-ms="11645">
+    <test started-at="2025-08-18T20:58:57 IST" name="Test" finished-at="2025-08-18T20:59:08 IST" duration-ms="10235">
       <class name="testscript.HomePageTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.HomePageTest@385c9627]" started-at="2025-08-18T12:45:34 IST" name="beforeMethod" finished-at="2025-08-18T12:45:36 IST" duration-ms="2182" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.HomePageTest@385c9627]" started-at="2025-08-18T20:59:05 IST" name="beforeMethod" finished-at="2025-08-18T20:59:06 IST" duration-ms="1913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="logoutMethods(java.lang.String,java.lang.String)[pri:0, instance:testscript.HomePageTest@385c9627]" started-at="2025-08-18T12:45:36 IST" name="logoutMethods" finished-at="2025-08-18T12:45:37 IST" duration-ms="1068" status="PASS">
+        <test-method signature="logoutMethods(java.lang.String,java.lang.String)[pri:0, instance:testscript.HomePageTest@385c9627]" started-at="2025-08-18T20:59:06 IST" name="logoutMethods" finished-at="2025-08-18T20:59:07 IST" duration-ms="991" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,17 +27,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutMethods -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.HomePageTest@385c9627]" started-at="2025-08-18T12:45:37 IST" name="afterMethod" finished-at="2025-08-18T12:45:37 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.HomePageTest@385c9627]" started-at="2025-08-18T20:59:07 IST" name="afterMethod" finished-at="2025-08-18T20:59:08 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testscript.HomePageTest -->
       <class name="testscript.AdminUserTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.AdminUserTest@6989da5e]" started-at="2025-08-18T12:45:30 IST" name="beforeMethod" finished-at="2025-08-18T12:45:32 IST" duration-ms="2223" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.AdminUserTest@6989da5e]" started-at="2025-08-18T20:59:01 IST" name="beforeMethod" finished-at="2025-08-18T20:59:03 IST" duration-ms="1854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="adminUserMethods(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testscript.AdminUserTest@6989da5e]" started-at="2025-08-18T12:45:32 IST" name="adminUserMethods" finished-at="2025-08-18T12:45:33 IST" duration-ms="1593" status="PASS">
+        <test-method signature="adminUserMethods(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testscript.AdminUserTest@6989da5e]" started-at="2025-08-18T20:59:03 IST" name="adminUserMethods" finished-at="2025-08-18T20:59:04 IST" duration-ms="1456" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,17 +63,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminUserMethods -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.AdminUserTest@6989da5e]" started-at="2025-08-18T12:45:33 IST" name="afterMethod" finished-at="2025-08-18T12:45:34 IST" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.AdminUserTest@6989da5e]" started-at="2025-08-18T20:59:04 IST" name="afterMethod" finished-at="2025-08-18T20:59:05 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testscript.AdminUserTest -->
       <class name="testscript.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@1bb5a082]" started-at="2025-08-18T12:45:26 IST" name="beforeMethod" finished-at="2025-08-18T12:45:29 IST" duration-ms="3064" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testscript.LoginPageTest@1bb5a082]" started-at="2025-08-18T20:58:57 IST" name="beforeMethod" finished-at="2025-08-18T20:59:00 IST" duration-ms="2686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserCanAbleToLoginCorrectUsernameAndPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@1bb5a082]" started-at="2025-08-18T12:45:29 IST" name="verifyUserCanAbleToLoginCorrectUsernameAndPassword" finished-at="2025-08-18T12:45:29 IST" duration-ms="726" status="PASS">
+        <test-method signature="verifyUserCanAbleToLoginCorrectUsernameAndPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@1bb5a082]" started-at="2025-08-18T20:59:00 IST" name="verifyUserCanAbleToLoginCorrectUsernameAndPassword" finished-at="2025-08-18T20:59:01 IST" duration-ms="642" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanAbleToLoginCorrectUsernameAndPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@1bb5a082]" started-at="2025-08-18T12:45:29 IST" name="afterMethod" finished-at="2025-08-18T12:45:30 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testscript.LoginPageTest@1bb5a082]" started-at="2025-08-18T20:59:01 IST" name="afterMethod" finished-at="2025-08-18T20:59:01 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

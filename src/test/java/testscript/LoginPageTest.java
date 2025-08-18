@@ -1,5 +1,7 @@
 package testscript;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -16,8 +18,16 @@ public class LoginPageTest extends Base {
 	  LoginPage loginpage = new LoginPage(driver);
 	  loginpage.enterUserNameAndPassword(username,password);
 	  loginpage.clickSignIn();
+	 
+	  
 	  boolean ishomepageisloaded = loginpage.isDashboardIsDisplay();
 	  Assert.assertTrue(ishomepageisloaded, "Homepage is not loaded");
+	  
+	  String expectedTitle = "Dashboard | 7rmart supermarket";
+	  String actualTitle  = driver.getTitle();
+	  Assert.assertEquals(actualTitle,expectedTitle,"Title Mismatch");
+	 
+	  
 	 
 	
   }
