@@ -1,29 +1,42 @@
 package testscript;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Parameters;
+import java.io.IOException;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.AdminUser;
+import pages.HomePage;
 import pages.LoginPage;
+import utilities.ExcelUtility;
+import utilities.FakerUtility;
 
 public class AdminUserTest extends Base {
-  
-
+HomePage homepage;
+AdminUser adminuser;
+FakerUtility faker = new FakerUtility();
 @Test
-@Parameters({"username","password","userids","pass"})
-  public void adminUserMethods(String username,String password,String userids, String pass) {
+  public void adminUserMethods() throws IOException 
+{
 	  
 	  LoginPage loginpage = new LoginPage(driver);
-	  loginpage.enterUserNameAndPassword(username,password);
-	  loginpage.clickSignIn();
+	  loginpage.enterUserNameAndPassword("admin","admin"); 
+	  homepage  = loginpage.clickSignIn();
+	  adminuser = homepage.clickMoreInfo();
+	  //String adminname = faker.getFakeFirstName();
+	  //String adminpass= faker.getPassword();
 	  
-	  AdminUser adminuser = new AdminUser(driver);
-	  adminuser.clickMoreInfo();
+	  adminuser.clickNew().enterUsernameMethod(ExcelUtility.getStringData(1, 0, "Homepagetest")).enterPasswordMethod(ExcelUtility.getStringData(1, 1, "Homepagetest")).selectUserTypes().saveData();
+	  
+	  boolean isdisplay = adminuser.assertioncheck();
+	  Assert.assertTrue(isdisplay, "not displayed");
+	  
+	  
+	  /*adminuser.clickMoreInfo();
 	  adminuser.clickNew();
-	  adminuser.enterUsernamePassword(userids, pass);
+	  adminuser.enterUsernamePassword("mmmm", "1234");
 	  adminuser.selectUserTypes();
-	  adminuser.saveData();
+	  adminuser.saveData();*/
 	  
 	  
 	  

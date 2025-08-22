@@ -26,16 +26,18 @@ public LoginPage(WebDriver driver)
            @FindBy(xpath="//p[text()='Dashboard']")WebElement dashboard;
            @FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alertLogin;
            
-public void enterUserNameAndPassword(String username,String password)
+public LoginPage enterUserNameAndPassword(String username,String password)
 {
 	userName.sendKeys(username);
 	passWord.sendKeys(password);
+	return this;   
 }
-public void clickSignIn()
+public HomePage clickSignIn()
 {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.elementToBeClickable(signIn));
 	signIn.click();
+	return new HomePage(driver);  // goes to another page
 	
 }
 public boolean isDashboardIsDisplay()

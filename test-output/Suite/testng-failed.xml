@@ -7,13 +7,13 @@
   <parameter name="username" value="admin"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscript.LoginPageTest">
+      <class name="testscript.HomePageTest">
         <methods>
-          <include name="verifyUserCanAbleToLoginCorrectUsernameAndPassword" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
+          <include name="logoutMethods" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testscript.LoginPageTest -->
+      </class> <!-- testscript.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

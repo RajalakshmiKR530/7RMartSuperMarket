@@ -21,6 +21,14 @@
 					</include>
 				</methods>
 			</class>
+			
+			<class name="testscript.ManageNewsTest">
+				<methods>
+					<include name="ManageNewsTest ">
+					</include>
+				</methods>
+			</class>
+			
 		</classes>
 
 	</test> <!--
